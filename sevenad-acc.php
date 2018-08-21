@@ -16,7 +16,7 @@
  * Plugin Name:       Accordion Shortcode
  * Plugin URI:        https://sevenagesdesign.com/
  * Description:       Creates a shortcode for accordion section creation. Usage => [accordion title="Your Title" content="Your Content Here"] !IMPORTANT! Do not update this plugin
- * Version:           1.0.2
+ * Version:           1.0.0
  * Author:            Seven Ages Design
  * Author URI:        https://sevenagesdesign.com/
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'SEVENAD_ACC_VERSION', '1.0.2' );
+define( 'ACCORDION_SHORTCODE_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.

@@ -67,10 +67,10 @@ class SevenAD_ACC {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
-			$this->version = PLUGIN_NAME_VERSION;
+		if ( defined( 'SEVENAD_ACC_VERSION' ) ) {
+			$this->version = SEVENAD_ACC_VERSION;
 		} else {
-			$this->version = '1.0.0';
+			$this->version = '1.0.2';
 		}
 		$this->plugin_name = 'sevenad-acc';
 
