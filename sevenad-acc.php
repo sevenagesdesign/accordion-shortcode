@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Accordion Shortcode
  * Plugin URI:        https://sevenagesdesign.com/
- * Description:       Creates a shortcode for accordion section creation. Usage => [accordion title="Your Title" content="Your Content Here"] !IMPORTANT! Do not update this plugin
+ * Description:       Creates a shortcode for accordion section creation. Usage => [accordion title="Your Title" content="Your Content Here"]
  * Version:           1.0.2
  * Author:            Seven Ages Design
  * Author URI:        https://sevenagesdesign.com/
