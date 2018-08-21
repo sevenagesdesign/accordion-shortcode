@@ -1,0 +1,64 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.accordion-section {
+	width: 100%;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    margin: 10px 0 35px;
+}
+
+.accordion-section:last-of-type {
+    margin-bottom: 35px;
+}
+
+.accordion-title {
+	position: relative;
+    padding: 8px 30px;
+    cursor: pointer;
+}
+
+.accordion-section .accordion-content {
+    display: none;
+}
+
+.accordion-section .accordion-title:before {
+    content: "\f0da";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    position: absolute;
+    left: 15px;
+    transition: .5s ease;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+.accordion-section.open .accordion-title:before {
+    transform: rotate(90deg);
+    transition: .5s ease;
+}
+
+.accordion-section.open .accordion-content {
+    display: block;
+    border-top: 1px solid #e8e8e8;
+}
+
+.accordion-title h3 {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.accordion-content {
+    padding: 10px 30px;
+}
+
+.accordion-content p:first-child,
+.accordion-content p:last-child {
+    padding: 0 !important;
+    margin: 0 !important;
+}
