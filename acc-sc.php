@@ -10,7 +10,7 @@
  *
  * @link              https://sevenagesdesign.com/
  * @since             1.0.0
- * @package           Acc_Sc
+ * @package           SevenAD_ACC
  *
  * @wordpress-plugin
  * Plugin Name:       Accordion Shortcode
@@ -21,7 +21,7 @@
  * Author URI:        https://sevenagesdesign.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       acc-sc
+ * Text Domain:       sevenad-acc
  * Domain Path:       /languages
  */
 
@@ -35,34 +35,34 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'ACCORDION_SHORTCODE_VERSION', '1.0.0' );
+define( 'ACCORDION_SHORTCODE_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-acc-sc-activator.php
+ * This action is documented in includes/class-sevenad-acc-activator.php
  */
-function activate_acc_sc() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-acc-sc-activator.php';
-	Acc_Sc_Activator::activate();
+function activate_sevenad_acc() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sevenad-acc-activator.php';
+	SevenAD_ACC_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-acc-sc-deactivator.php
+ * This action is documented in includes/class-sevenad-acc-deactivator.php
  */
-function deactivate_acc_sc() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-acc-sc-deactivator.php';
-	Acc_Sc_Deactivator::deactivate();
+function deactivate_sevenad_acc() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sevenad-acc-deactivator.php';
+	SevenAD_ACC_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_acc_sc' );
-register_deactivation_hook( __FILE__, 'deactivate_acc_sc' );
+register_activation_hook( __FILE__, 'activate_sevenad_acc' );
+register_deactivation_hook( __FILE__, 'deactivate_sevenad_acc' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-acc-sc.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-sevenad-acc.php';
 
 /**
  * Begins execution of the plugin.
@@ -73,10 +73,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-acc-sc.php';
  *
  * @since    1.0.0
  */
-function run_acc_sc() {
+function run_sevenad_acc() {
 
-	$plugin = new Acc_Sc();
+	$plugin = new SevenAD_ACC();
 	$plugin->run();
 
 }
-run_acc_sc();
+run_sevenad_acc();

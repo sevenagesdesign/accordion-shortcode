@@ -8,8 +8,8 @@
  * @link       https://sevenagesdesign.com/
  * @since      1.0.0
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/admin/partials
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/admin/partials
  */
 ?>
 

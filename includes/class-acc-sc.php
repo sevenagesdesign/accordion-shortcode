@@ -9,8 +9,8 @@
  * @link       https://sevenagesdesign.com/
  * @since      1.0.0
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  * @author     Seven Ages Design <dev@sevenagesdesign.com>
  */
-class Acc_Sc {
+class SevenAD_ACC {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Acc_Sc {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Acc_Sc_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      SevenAD_ACC_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -72,7 +72,7 @@ class Acc_Sc {
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'acc-sc';
+		$this->plugin_name = 'sevenad-acc';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -86,10 +86,10 @@ class Acc_Sc {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Acc_Sc_Loader. Orchestrates the hooks of the plugin.
-	 * - Acc_Sc_i18n. Defines internationalization functionality.
-	 * - Acc_Sc_Admin. Defines all hooks for the admin area.
-	 * - Acc_Sc_Public. Defines all hooks for the public side of the site.
+	 * - SevenAD_ACC_Loader. Orchestrates the hooks of the plugin.
+	 * - SevenAD_ACC_i18n. Defines internationalization functionality.
+	 * - SevenAD_ACC_Admin. Defines all hooks for the admin area.
+	 * - SevenAD_ACC_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -103,33 +103,33 @@ class Acc_Sc {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-acc-sc-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-sevenad-acc-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-acc-sc-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-sevenad-acc-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-acc-sc-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-sevenad-acc-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-acc-sc-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-sevenad-acc-public.php';
 
-		$this->loader = new Acc_Sc_Loader();
+		$this->loader = new SevenAD_ACC_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Acc_Sc_i18n class in order to set the domain and to register the hook
+	 * Uses the SevenAD_ACC_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -137,7 +137,7 @@ class Acc_Sc {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Acc_Sc_i18n();
+		$plugin_i18n = new SevenAD_ACC_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -152,7 +152,7 @@ class Acc_Sc {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Acc_Sc_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new SevenAD_ACC_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -168,7 +168,7 @@ class Acc_Sc {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Acc_Sc_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new SevenAD_ACC_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -199,7 +199,7 @@ class Acc_Sc {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Acc_Sc_Loader    Orchestrates the hooks of the plugin.
+	 * @return    SevenAD_ACC_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

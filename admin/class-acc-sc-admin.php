@@ -6,8 +6,8 @@
  * @link       https://sevenagesdesign.com/
  * @since      1.0.0
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/admin
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/admin
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/admin
  * @author     Seven Ages Design <dev@sevenagesdesign.com>
  */
-class Acc_Sc_Admin {
+class SevenAD_ACC_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -65,15 +65,15 @@ class Acc_Sc_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Acc_Sc_Loader as all of the hooks are defined
+		 * defined in SevenAD_ACC_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Acc_Sc_Loader will then create the relationship
+		 * The SevenAD_ACC_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/acc-sc-admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/sevenad-acc-admin.css', array(), $this->version, 'all' );
 
 	}
 
@@ -88,15 +88,15 @@ class Acc_Sc_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Acc_Sc_Loader as all of the hooks are defined
+		 * defined in SevenAD_ACC_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Acc_Sc_Loader will then create the relationship
+		 * The SevenAD_ACC_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/acc-sc-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sevenad-acc-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
 

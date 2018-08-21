@@ -6,8 +6,8 @@
  * @link       https://sevenagesdesign.com/
  * @since      1.0.0
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  * @author     Seven Ages Design <dev@sevenagesdesign.com>
  */
-class Acc_Sc_Loader {
+class SevenAD_ACC_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

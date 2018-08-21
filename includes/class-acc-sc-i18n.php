@@ -9,8 +9,8 @@
  * @link       https://sevenagesdesign.com/
  * @since      1.0.0
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  * @author     Seven Ages Design <dev@sevenagesdesign.com>
  */
-class Acc_Sc_i18n {
+class SevenAD_ACC_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Acc_Sc_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'acc-sc',
+			'sevenad-acc',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

@@ -6,8 +6,8 @@
  * @link       https://sevenagesdesign.com/
  * @since      1.0.0
  *
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Acc_Sc
- * @subpackage Acc_Sc/includes
+ * @package    SevenAD_ACC
+ * @subpackage SevenAD_ACC/includes
  * @author     Seven Ages Design <dev@sevenagesdesign.com>
  */
-class Acc_Sc_Activator {
+class SevenAD_ACC_Activator {
 
 	/**
 	 * Short Description. (use period)
